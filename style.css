@@ -1,0 +1,171 @@
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: aqua;
+    margin: 0;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 7px red;
+}
+
+.btn:active {
+    box-shadow: -5px -5px 7px green;
+}
+
+.containor {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-wrap: wrap;
+}
+
+.newnote {
+    width: 15vw;
+    height: 40vh;
+    margin: 30px 20px;
+    background-color: rgb(238, 238, 31);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.note {
+    width: 15vw;
+    height: 40vh;
+    margin: 30px 20px;
+    background-color: rgb(244, 244, 241);
+    border: none;
+    padding: 0px 20px;
+
+}
+
+.note p {
+    height: 20vh;
+    overflow-y:scroll;
+}
+
+.main {
+    /* display: none; */
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 40%;
+    top: -110%;
+    transition: all ease 1s;
+}
+
+.addnote {
+    width: 20vw;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(243, 244, 245);
+
+}
+
+.addnote p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 2px;
+    margin-bottom: 0px;
+}
+
+.addnote input {
+    font-size: 18px;
+    font-weight: 700;
+    width: 90%;
+    height: 20px;
+    margin: 0% 5%;
+}
+
+.addnote textarea {
+    width: 80%;
+    height: 20vh;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y:scroll;
+}
+
+.btn2 {
+    width: 90%;
+    height: 30px;
+    margin: 8% 5%;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: ORANGE;
+
+}
+
+.form {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    height: fit-content;
+    background: #000;
+}
+
+.nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    color: #fff;
+}
+
+
+@media (max-width:500px) {
+    .newnote {
+        display: none;
+    }
+   
+    nav {
+        height: 10vh;
+        display: block;
+    }
+
+    .containor {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+    }
+
+    .note {
+        width: 80%;
+    }
+
+    .main {
+        left: 10%;
+    }
+
+    .addnote {
+        width: 80vw;
+
+    }
+}
