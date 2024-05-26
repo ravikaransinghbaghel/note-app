@@ -48,6 +48,7 @@ body {
     margin: 30px 20px;
     background-color: rgb(244, 244, 241);
     border: none;
+    border-radius: 10px;
     padding: 0px 20px;
 
 }
